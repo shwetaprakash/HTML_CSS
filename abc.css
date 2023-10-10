@@ -1,0 +1,66 @@
+h1 {
+    background-color:cornflowerblue;
+    font-size: medium;
+    text-align: center;
+}
+
+body {
+    background-color: aquamarine;
+}
+p{
+    color:green;
+    background-color: blueviolet;
+}
+thead {
+    color: blue;
+
+}
+
+tbody {
+    color: red;
+}
+
+tfoot {
+    color: green;
+    text-align: center;
+}
+
+a:link {
+    color: chartreuse;
+    background-color: chocolate;
+}
+
+a:visited {
+    color: pink;
+    background-color: blue;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+}
+
+.my {
+    background-color: cyan;
+    font-size: large;
+    font-style: italic;
+}
+
+.abc {
+    background-color: blueviolet;
+}
+
+ul.a {
+    list-style-type: square;
+
+}
+
+ul.b {
+    list-style-type: circle;
+}

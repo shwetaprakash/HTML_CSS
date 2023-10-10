@@ -1,0 +1,164 @@
+<html lang="en-US">
+
+<head>
+    <!--responsive page-->
+    <meta name="viewport" content="width = device-width,initial-scale = 1.0">
+    <meta charset="utf-8">
+    <style>
+        p{
+            border: 5px solid red;
+            padding:15px;
+            margin-bottom: 30px;
+
+        }
+        input[type=text],textarea
+        {
+            padding: 10px;
+            border:2px solid red;
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-color: cornflowerblue;
+            color: black;
+        }
+
+        input[type=text]:focus
+        {
+            background-color: chartreuse;
+            border: 2px solid pink;
+        }
+        input[type=button]
+        {
+            background-color:crimson;
+            border: 2px solid black;
+            color:black;
+            padding: 5px;
+        }
+        fieldset
+        {
+            background-color: gray;
+            border: 2px solid red;
+            width: 50%;
+        }
+        legend{
+            background-color: aqua;
+            color:brown;
+            padding: 10px;
+        }
+        optgroup[label]{
+            background-color: darkgoldenrod;
+
+            
+        }
+
+    </style>
+  
+</head>
+
+<body>
+    <p>
+    
+            This is my block element and This is <span style="border: 2px dashed blue"><em>INLINE ELEMENT</em></span>
+            of HtmL.
+    </p>
+
+<div>
+   
+    <img src="https://pngimg.com/uploads/square/small/square_PNG75.png" usemap="#shapes" alt=""> 
+    <img src="https://png.pngtree.com/png-clipart/20201029/ourmid/pngtree-circle-clipart-green-circle-png-image_2382000.jpg"
+        alt="" height="200" width="200" usemap="#shapes1">
+    <map name="shapes">
+         <area shape="rect" coords="5,5,210,206" title="" target="_blank" />
+    </map>
+    <map name="shapes1"> 
+         <area shape="circle" coords="100,107,92" href="demo1.html">
+
+     </map>
+    
+         
+   </div>
+
+   <div>
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+
+     <input type="number" id="a" value="20"> 
+    + 
+    <input type="range" id="b" value="0">
+    =
+    <output name="x" for="a b"></output>
+    <br>
+    <br>
+        <fieldset>
+            <legend>Personal Details </legend>
+        <label for="firstname">FirstName :</label>
+        <input type="text" 
+        name="firstname"
+         required
+         maxlength="20" 
+         value="EDUBRIDGE"
+          >
+        <br>
+        <br>
+        <label for="lastname">LastName: </label>
+        <input type="text" 
+        name="lastname"
+        placeholder="enter name">
+        <br>
+        <br>
+        <label for="country_code">Country Code:</label>
+        <Input type="text" name="country_code" value="+91">
+        <Input type="text" name="country_code1" pattern="[A-Za-z]{3}" title="3 letter code" width="50px">
+        <br>
+        <br>
+        <label for="phone">Phone :</label>
+        <input type="tel" name="phone" placeholder="011-123456"
+        pattern="[0-9]{3}-[0-9]{6}" title="enter phone no in 6 digit">
+        <br>
+        <br>
+        EMAIL:
+        <input type="email" name="email" placeholder="abc@gmail.com"
+        pattern="^[a-zA-z0-9]@[a-zA-z0-9].(com|org|in)$">
+        <br>
+        <br>
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" value ="female">
+        <label for="female">female</label>
+        <input type="radio" name="gender" value="male">
+        <label for="male">male</label>
+        <input type="radio" name="gender" value="other" disabled>
+        <label for="male">other</label>
+        <br>
+        <label for="address">Enter Address:</label>
+        <textarea name="address" rows="4" cols="50" autofocus>
+
+        </textarea>
+            Delhi
+            India
+        </textarea>
+        <br>
+        <br>
+        <label for="course">Select Course</label>
+        <select name="course" >
+            <optgroup label="JavaCourses">
+                <option>Java</option>
+                <option>Adv Java</option>
+                <option>spring boot</option>
+            </optgroup>
+            <optgroup label="Script" disabled>
+                <option>JavaScript</option>
+                <option>TypeScript</option>
+            </optgroup>
+            <option>Python</option>
+            <option>DBMS</option>
+        </select>
+        <br>
+        <br>
+        
+
+        <input type="submit" value="Login">
+        </fieldset>
+        
+    </form>
+    
+   </div>
+</body>
+</html>
